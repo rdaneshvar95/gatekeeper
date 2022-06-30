@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		717E3230286E56C80076953C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E322F286E56C80076953C /* AppDelegate.swift */; };
+		717E3232286E56C80076953C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3231286E56C80076953C /* SceneDelegate.swift */; };
+		717E3234286E56C80076953C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3233286E56C80076953C /* ViewController.swift */; };
+		717E3237286E56C80076953C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717E3235286E56C80076953C /* Main.storyboard */; };
+		717E3239286E56C80076953C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 717E3238286E56C80076953C /* Assets.xcassets */; };
+		717E323C286E56C80076953C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717E323A286E56C80076953C /* LaunchScreen.storyboard */; };
+		717E3247286E56C80076953C /* GateKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3246286E56C80076953C /* GateKeeperTests.swift */; };
+		717E3251286E56C80076953C /* GateKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3250286E56C80076953C /* GateKeeperUITests.swift */; };
+		717E3253286E56C80076953C /* GateKeeperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3252286E56C80076953C /* GateKeeperUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		717E3243286E56C80076953C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717E3224286E56C80076953C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 717E322B286E56C80076953C;
+			remoteInfo = GateKeeper;
+		};
+		717E324D286E56C80076953C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 717E3224286E56C80076953C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 717E322B286E56C80076953C;
+			remoteInfo = GateKeeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		717E322C286E56C80076953C /* GateKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GateKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		717E322F286E56C80076953C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		717E3231286E56C80076953C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		717E3233286E56C80076953C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		717E3236286E56C80076953C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		717E3238286E56C80076953C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		717E323B286E56C80076953C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		717E323D286E56C80076953C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		717E3242286E56C80076953C /* GateKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GateKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		717E3246286E56C80076953C /* GateKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateKeeperTests.swift; sourceTree = "<group>"; };
+		717E324C286E56C80076953C /* GateKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GateKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		717E3250286E56C80076953C /* GateKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateKeeperUITests.swift; sourceTree = "<group>"; };
+		717E3252286E56C80076953C /* GateKeeperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateKeeperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		717E3229286E56C80076953C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717E323F286E56C80076953C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717E3249286E56C80076953C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		717E3223286E56C80076953C = {
+			isa = PBXGroup;
+			children = (
+				717E322E286E56C80076953C /* GateKeeper */,
+				717E3245286E56C80076953C /* GateKeeperTests */,
+				717E324F286E56C80076953C /* GateKeeperUITests */,
+				717E322D286E56C80076953C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		717E322D286E56C80076953C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				717E322C286E56C80076953C /* GateKeeper.app */,
+				717E3242286E56C80076953C /* GateKeeperTests.xctest */,
+				717E324C286E56C80076953C /* GateKeeperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		717E322E286E56C80076953C /* GateKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				717E322F286E56C80076953C /* AppDelegate.swift */,
+				717E3231286E56C80076953C /* SceneDelegate.swift */,
+				717E3233286E56C80076953C /* ViewController.swift */,
+				717E3235286E56C80076953C /* Main.storyboard */,
+				717E3238286E56C80076953C /* Assets.xcassets */,
+				717E323A286E56C80076953C /* LaunchScreen.storyboard */,
+				717E323D286E56C80076953C /* Info.plist */,
+			);
+			path = GateKeeper;
+			sourceTree = "<group>";
+		};
+		717E3245286E56C80076953C /* GateKeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				717E3246286E56C80076953C /* GateKeeperTests.swift */,
+			);
+			path = GateKeeperTests;
+			sourceTree = "<group>";
+		};
+		717E324F286E56C80076953C /* GateKeeperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				717E3250286E56C80076953C /* GateKeeperUITests.swift */,
+				717E3252286E56C80076953C /* GateKeeperUITestsLaunchTests.swift */,
+			);
+			path = GateKeeperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		717E322B286E56C80076953C /* GateKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717E3256286E56C80076953C /* Build configuration list for PBXNativeTarget "GateKeeper" */;
+			buildPhases = (
+				717E3228286E56C80076953C /* Sources */,
+				717E3229286E56C80076953C /* Frameworks */,
+				717E322A286E56C80076953C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GateKeeper;
+			productName = GateKeeper;
+			productReference = 717E322C286E56C80076953C /* GateKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		717E3241286E56C80076953C /* GateKeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717E3259286E56C80076953C /* Build configuration list for PBXNativeTarget "GateKeeperTests" */;
+			buildPhases = (
+				717E323E286E56C80076953C /* Sources */,
+				717E323F286E56C80076953C /* Frameworks */,
+				717E3240286E56C80076953C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717E3244286E56C80076953C /* PBXTargetDependency */,
+			);
+			name = GateKeeperTests;
+			productName = GateKeeperTests;
+			productReference = 717E3242286E56C80076953C /* GateKeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		717E324B286E56C80076953C /* GateKeeperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 717E325C286E56C80076953C /* Build configuration list for PBXNativeTarget "GateKeeperUITests" */;
+			buildPhases = (
+				717E3248286E56C80076953C /* Sources */,
+				717E3249286E56C80076953C /* Frameworks */,
+				717E324A286E56C80076953C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717E324E286E56C80076953C /* PBXTargetDependency */,
+			);
+			name = GateKeeperUITests;
+			productName = GateKeeperUITests;
+			productReference = 717E324C286E56C80076953C /* GateKeeperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		717E3224286E56C80076953C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					717E322B286E56C80076953C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					717E3241286E56C80076953C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 717E322B286E56C80076953C;
+					};
+					717E324B286E56C80076953C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 717E322B286E56C80076953C;
+					};
+				};
+			};
+			buildConfigurationList = 717E3227286E56C80076953C /* Build configuration list for PBXProject "GateKeeper" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 717E3223286E56C80076953C;
+			productRefGroup = 717E322D286E56C80076953C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				717E322B286E56C80076953C /* GateKeeper */,
+				717E3241286E56C80076953C /* GateKeeperTests */,
+				717E324B286E56C80076953C /* GateKeeperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		717E322A286E56C80076953C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717E323C286E56C80076953C /* LaunchScreen.storyboard in Resources */,
+				717E3239286E56C80076953C /* Assets.xcassets in Resources */,
+				717E3237286E56C80076953C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717E3240286E56C80076953C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717E324A286E56C80076953C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		717E3228286E56C80076953C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717E3234286E56C80076953C /* ViewController.swift in Sources */,
+				717E3230286E56C80076953C /* AppDelegate.swift in Sources */,
+				717E3232286E56C80076953C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717E323E286E56C80076953C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717E3247286E56C80076953C /* GateKeeperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		717E3248286E56C80076953C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717E3251286E56C80076953C /* GateKeeperUITests.swift in Sources */,
+				717E3253286E56C80076953C /* GateKeeperUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		717E3244286E56C80076953C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 717E322B286E56C80076953C /* GateKeeper */;
+			targetProxy = 717E3243286E56C80076953C /* PBXContainerItemProxy */;
+		};
+		717E324E286E56C80076953C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 717E322B286E56C80076953C /* GateKeeper */;
+			targetProxy = 717E324D286E56C80076953C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		717E3235286E56C80076953C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				717E3236286E56C80076953C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		717E323A286E56C80076953C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				717E323B286E56C80076953C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		717E3254286E56C80076953C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		717E3255286E56C80076953C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		717E3257286E56C80076953C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GateKeeper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.rdaneshvar.GateKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		717E3258286E56C80076953C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GateKeeper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.rdaneshvar.GateKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		717E325A286E56C80076953C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.rdaneshvar.GateKeeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GateKeeper.app/GateKeeper";
+			};
+			name = Debug;
+		};
+		717E325B286E56C80076953C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.rdaneshvar.GateKeeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GateKeeper.app/GateKeeper";
+			};
+			name = Release;
+		};
+		717E325D286E56C80076953C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.rdaneshvar.GateKeeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GateKeeper;
+			};
+			name = Debug;
+		};
+		717E325E286E56C80076953C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.rdaneshvar.GateKeeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GateKeeper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		717E3227286E56C80076953C /* Build configuration list for PBXProject "GateKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717E3254286E56C80076953C /* Debug */,
+				717E3255286E56C80076953C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717E3256286E56C80076953C /* Build configuration list for PBXNativeTarget "GateKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717E3257286E56C80076953C /* Debug */,
+				717E3258286E56C80076953C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717E3259286E56C80076953C /* Build configuration list for PBXNativeTarget "GateKeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717E325A286E56C80076953C /* Debug */,
+				717E325B286E56C80076953C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		717E325C286E56C80076953C /* Build configuration list for PBXNativeTarget "GateKeeperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				717E325D286E56C80076953C /* Debug */,
+				717E325E286E56C80076953C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 717E3224286E56C80076953C /* Project object */;
+}
