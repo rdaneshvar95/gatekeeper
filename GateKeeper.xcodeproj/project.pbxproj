@@ -17,6 +17,8 @@
 		717E3251286E56C80076953C /* GateKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3250286E56C80076953C /* GateKeeperUITests.swift */; };
 		717E3253286E56C80076953C /* GateKeeperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3252286E56C80076953C /* GateKeeperUITestsLaunchTests.swift */; };
 		717E3262286E601F0076953C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3261286E601F0076953C /* MainView.swift */; };
+		717E3264286E61750076953C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3263286E61750076953C /* WelcomeViewController.swift */; };
+		717E3267286E61920076953C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3266286E61920076953C /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		717E3250286E56C80076953C /* GateKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateKeeperUITests.swift; sourceTree = "<group>"; };
 		717E3252286E56C80076953C /* GateKeeperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GateKeeperUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		717E3261286E601F0076953C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		717E3263286E61750076953C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		717E3266286E61920076953C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +146,18 @@
 			isa = PBXGroup;
 			children = (
 				717E325F286E59490076953C /* Main */,
+				717E3265286E617A0076953C /* Welcome */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		717E3265286E617A0076953C /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				717E3266286E61920076953C /* WelcomeView.swift */,
+				717E3263286E61750076953C /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +292,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				717E3234286E56C80076953C /* MainViewController.swift in Sources */,
+				717E3267286E61920076953C /* WelcomeView.swift in Sources */,
+				717E3264286E61750076953C /* WelcomeViewController.swift in Sources */,
 				717E3262286E601F0076953C /* MainView.swift in Sources */,
 				717E3230286E56C80076953C /* AppDelegate.swift in Sources */,
 				717E3232286E56C80076953C /* SceneDelegate.swift in Sources */,
