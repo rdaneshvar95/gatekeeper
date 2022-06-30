@@ -9,6 +9,8 @@ import UIKit
 
 class MainView: UIView {
     
+    private let presenter: MainPresenter
+
     private let usernameLabel: UILabel = {
         let label = UILabel()
         label.text = "Username"
@@ -54,10 +56,14 @@ class MainView: UIView {
 
     private let margin: CGFloat = 8
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(presenter: MainPresenter) {
+        self.presenter = presenter
+
+        super.init(frame: .zero)
         
         backgroundColor = .white
+        
+        loginButton.addTarget(self, action: #selector(tapOnLogin), for: .touchUpInside)
         
         let buttonsStackView = UIStackView(arrangedSubviews: [forgotPasswordButton, loginButton])
         buttonsStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -96,5 +102,9 @@ class MainView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc private func tapOnLogin() {
+        presenter.login()
     }
 }
