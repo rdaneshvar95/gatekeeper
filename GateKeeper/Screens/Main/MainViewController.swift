@@ -7,13 +7,28 @@
 
 import UIKit
 
+protocol MainViewControllerDelegate: AnyObject {
+    func showWelcomeScreen()
+}
+
 class MainViewController: UIViewController {
 
+    private let presenter = MainPresenter()
+
     override func loadView() {
-        view = MainView(frame: .zero)
+        presenter.viewControllerDelegate = self
+
+        view = MainView(presenter: presenter)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+
+extension MainViewController: MainViewControllerDelegate {
+    func showWelcomeScreen() {
+        let welcomeViewController = WelcomeViewController()
+        navigationController?.setViewControllers([welcomeViewController], animated: true)
     }
 }

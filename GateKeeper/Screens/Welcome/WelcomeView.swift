@@ -9,6 +9,8 @@ import UIKit
 
 class WelcomeView: UIView {
     
+    private let presenter: WelcomePresenter
+
     private let welcomeLabel: UILabel = {
         let label = UILabel()
         label.text = "Welcome"
@@ -25,11 +27,15 @@ class WelcomeView: UIView {
 
     private let margin: CGFloat = 8
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(presenter: WelcomePresenter) {
+        self.presenter = presenter
         
+        super.init(frame: .zero)
+
         backgroundColor = .white
         
+        logoutButton.addTarget(self, action: #selector(tapOnLogout), for: .touchUpInside)
+
         let stackView = UIStackView(arrangedSubviews: [welcomeLabel, logoutButton])
         stackView.spacing = margin
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -45,6 +51,10 @@ class WelcomeView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    @objc private func tapOnLogout() {
+        presenter.login()
     }
 }
 

@@ -7,10 +7,18 @@
 
 import UIKit
 
+protocol WelcomeViewControllerDelegate: AnyObject {
+    func showMainScreen()
+}
+
 class WelcomeViewController: UIViewController {
 
+    private let presenter = WelcomePresenter()
+
     override func loadView() {
-        view = WelcomeView(frame: .zero)
+        presenter.viewControllerDelegate = self
+
+        view = WelcomeView(presenter: presenter)
     }
 
     override func viewDidLoad() {
@@ -18,3 +26,9 @@ class WelcomeViewController: UIViewController {
     }
 }
 
+extension WelcomeViewController: WelcomeViewControllerDelegate {
+    func showMainScreen() {
+        let mainViewController = MainViewController()
+        navigationController?.setViewControllers([mainViewController], animated: true)
+    }
+}
