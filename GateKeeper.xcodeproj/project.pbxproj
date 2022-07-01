@@ -21,6 +21,10 @@
 		717E3267286E61920076953C /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3266286E61920076953C /* WelcomeView.swift */; };
 		717E3269286E636A0076953C /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E3268286E636A0076953C /* MainPresenter.swift */; };
 		717E326B286E63760076953C /* WelcomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717E326A286E63760076953C /* WelcomePresenter.swift */; };
+		71F6DDCB286E791A00DF8EAD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6DDCA286E791A00DF8EAD /* NetworkManager.swift */; };
+		71F6DDCE286E7B1900DF8EAD /* GiphyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6DDCD286E7B1900DF8EAD /* GiphyService.swift */; };
+		71F6DDD1286E7B9900DF8EAD /* GiphyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6DDD0286E7B9900DF8EAD /* GiphyModel.swift */; };
+		71F6DDD5286EBF5F00DF8EAD /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 71F6DDD4286EBF5F00DF8EAD /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,9 @@
 		717E3266286E61920076953C /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		717E3268286E636A0076953C /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		717E326A286E63760076953C /* WelcomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePresenter.swift; sourceTree = "<group>"; };
+		71F6DDCA286E791A00DF8EAD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		71F6DDCD286E7B1900DF8EAD /* GiphyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyService.swift; sourceTree = "<group>"; };
+		71F6DDD0286E7B9900DF8EAD /* GiphyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F6DDD5286EBF5F00DF8EAD /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +123,10 @@
 				717E3238286E56C80076953C /* Assets.xcassets */,
 				717E323A286E56C80076953C /* LaunchScreen.storyboard */,
 				717E323D286E56C80076953C /* Info.plist */,
+				71F6DDCC286E792500DF8EAD /* Managers */,
 				717E3260286E59560076953C /* Screens */,
+				71F6DDCF286E7B2A00DF8EAD /* Services */,
+				71F6DDD2286E7B9D00DF8EAD /* Models */,
 			);
 			path = GateKeeper;
 			sourceTree = "<group>";
@@ -166,6 +177,30 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
+		71F6DDCC286E792500DF8EAD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				71F6DDCA286E791A00DF8EAD /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		71F6DDCF286E7B2A00DF8EAD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				71F6DDCD286E7B1900DF8EAD /* GiphyService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		71F6DDD2286E7B9D00DF8EAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				71F6DDD0286E7B9900DF8EAD /* GiphyModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,6 +217,9 @@
 			dependencies = (
 			);
 			name = GateKeeper;
+			packageProductDependencies = (
+				71F6DDD4286EBF5F00DF8EAD /* SDWebImage */,
+			);
 			productName = GateKeeper;
 			productReference = 717E322C286E56C80076953C /* GateKeeper.app */;
 			productType = "com.apple.product-type.application";
@@ -254,6 +292,9 @@
 				Base,
 			);
 			mainGroup = 717E3223286E56C80076953C;
+			packageReferences = (
+				71F6DDD3286EBF5F00DF8EAD /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 717E322D286E56C80076953C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,6 +338,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F6DDCE286E7B1900DF8EAD /* GiphyService.swift in Sources */,
+				71F6DDD1286E7B9900DF8EAD /* GiphyModel.swift in Sources */,
+				71F6DDCB286E791A00DF8EAD /* NetworkManager.swift in Sources */,
 				717E3234286E56C80076953C /* MainViewController.swift in Sources */,
 				717E3267286E61920076953C /* WelcomeView.swift in Sources */,
 				717E3264286E61750076953C /* WelcomeViewController.swift in Sources */,
@@ -642,6 +686,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71F6DDD3286EBF5F00DF8EAD /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71F6DDD4286EBF5F00DF8EAD /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71F6DDD3286EBF5F00DF8EAD /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 717E3224286E56C80076953C /* Project object */;
 }

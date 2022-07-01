@@ -21,10 +21,6 @@ class MainViewController: UIViewController {
 
         view = MainView(presenter: presenter)
     }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
 
 extension MainViewController: MainViewControllerDelegate {

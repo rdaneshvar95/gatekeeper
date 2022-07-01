@@ -5,7 +5,12 @@
 //  Created by Ray on 01/07/22.
 //
 
+import SDWebImage
 import UIKit
+
+protocol WelcomeViewDelegate: AnyObject {
+    func showGiphy(_: GiphyModel)
+}
 
 class WelcomeView: UIView {
     
@@ -18,9 +23,24 @@ class WelcomeView: UIView {
 
     private let welcomeLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         return label
+    }()
+    
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        return label
+    }()
+    
+    private let authorLabel: UILabel = {
+        let label = UILabel()
+        return label
+    }()
+    
+    private let imageView: SDAnimatedImageView = {
+        let imageView = SDAnimatedImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.sd_imageIndicator = SDWebImageActivityIndicator.large
+        return imageView
     }()
     
     private let logoutButton: UIButton = {
@@ -41,16 +61,23 @@ class WelcomeView: UIView {
         welcomeLabel.text = .localizedStringWithFormat(Copy.welcome.rawValue, name)
         logoutButton.addTarget(self, action: #selector(tapOnLogout), for: .touchUpInside)
 
-        let stackView = UIStackView(arrangedSubviews: [welcomeLabel, logoutButton])
+        let stackView = UIStackView(arrangedSubviews: [
+            titleLabel, imageView, authorLabel, welcomeLabel, logoutButton
+        ])
         stackView.spacing = margin
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
+        stackView.alignment = .center
 
         addSubview(stackView)
 
         NSLayoutConstraint.activate([
-            stackView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            stackView.centerYAnchor.constraint(equalTo: centerYAnchor)
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: margin),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -margin),
+            stackView.centerYAnchor.constraint(equalTo: centerYAnchor),
+            
+            imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor),
+            imageView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.5)
         ])
     }
     
@@ -63,3 +90,10 @@ class WelcomeView: UIView {
     }
 }
 
+extension WelcomeView: WelcomeViewDelegate {
+    func showGiphy(_ model: GiphyModel) {
+        titleLabel.text = model.title
+        imageView.sd_setImage(with: URL(string: model.url))
+        authorLabel.text = model.author
+    }
+}
