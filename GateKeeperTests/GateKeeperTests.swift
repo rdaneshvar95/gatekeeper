@@ -23,6 +23,7 @@ class GateKeeperTests: XCTestCase {
     }
     
     func testMainPresenterCorrectPassword() {
-        XCTAssertNoThrow(try MainPresenter().validate(username: "asdf", password: "password"))
+        let presenter = MainPresenter()
+        XCTAssertNoThrow(try presenter.validate(username: "asdf", password: presenter.validPassword))
     }
 }

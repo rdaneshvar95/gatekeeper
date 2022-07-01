@@ -9,11 +9,18 @@ import UIKit
 
 class MainView: UIView {
     
+    private enum Copy: String {
+        case username = "Username"
+        case password = "Password"
+        case login = "Login"
+        case forgotPassword = "Forgot Password"
+    }
+
     private let presenter: MainPresenter
 
     private let usernameLabel: UILabel = {
         let label = UILabel()
-        label.text = "Username"
+        label.text = Copy.username.rawValue
         label.translatesAutoresizingMaskIntoConstraints = false
         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         return label
@@ -31,7 +38,7 @@ class MainView: UIView {
     
     private let passwordLabel: UILabel = {
         let label = UILabel()
-        label.text = "Password"
+        label.text = Copy.password.rawValue
         label.translatesAutoresizingMaskIntoConstraints = false
         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         return label
@@ -48,14 +55,14 @@ class MainView: UIView {
     
     private let loginButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Login", for: .normal)
+        button.setTitle(Copy.login.rawValue, for: .normal)
         return button
     }()
     
     private let forgotPasswordButton: UIButton = {
         let button = UIButton(type: .system)
         button.isEnabled = false
-        button.setTitle("Forgot Password", for: .normal)
+        button.setTitle(Copy.forgotPassword.rawValue, for: .normal)
         return button
     }()
 

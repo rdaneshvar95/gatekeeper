@@ -8,7 +8,7 @@
 import UIKit
 
 protocol MainViewControllerDelegate: AnyObject {
-    func showWelcomeScreen()
+    func showWelcomeScreen(name: String)
     func showErrorAlert(message: String)
 }
 
@@ -36,8 +36,8 @@ extension MainViewController: MainViewControllerDelegate {
         present(alertViewController, animated: true)
     }
     
-    func showWelcomeScreen() {
-        let welcomeViewController = WelcomeViewController()
+    func showWelcomeScreen(name: String) {
+        let welcomeViewController = WelcomeViewController(name: name)
         navigationController?.setViewControllers([welcomeViewController], animated: true)
     }
 }
