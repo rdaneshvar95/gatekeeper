@@ -54,7 +54,7 @@ class WelcomeView: UIView {
     }
     
     @objc private func tapOnLogout() {
-        presenter.login()
+        presenter.logout()
     }
 }
 

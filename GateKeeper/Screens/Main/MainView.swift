@@ -22,6 +22,9 @@ class MainView: UIView {
     private let usernameTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .bezel
+        textField.clearButtonMode = .whileEditing
+        textField.autocapitalizationType = .none
+        textField.autocorrectionType = .no
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -37,6 +40,8 @@ class MainView: UIView {
     private let passwordTextField: UITextField = {
         let textField = UITextField()
         textField.borderStyle = .bezel
+        textField.clearButtonMode = .whileEditing
+        textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -105,6 +110,6 @@ class MainView: UIView {
     }
     
     @objc private func tapOnLogin() {
-        presenter.login()
+        presenter.login(username: usernameTextField.text, password: passwordTextField.text)
     }
 }
