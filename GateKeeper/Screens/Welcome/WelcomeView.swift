@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol WelcomeViewDelegate: AnyObject {
+    func showGiphy(_: GiphyModel)
+}
+
 class WelcomeView: UIView {
     
     private enum Copy: String {
@@ -18,8 +22,16 @@ class WelcomeView: UIView {
 
     private let welcomeLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        return label
+    }()
+    
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        return label
+    }()
+    
+    private let authorLabel: UILabel = {
+        let label = UILabel()
         return label
     }()
     
@@ -41,7 +53,9 @@ class WelcomeView: UIView {
         welcomeLabel.text = .localizedStringWithFormat(Copy.welcome.rawValue, name)
         logoutButton.addTarget(self, action: #selector(tapOnLogout), for: .touchUpInside)
 
-        let stackView = UIStackView(arrangedSubviews: [welcomeLabel, logoutButton])
+        let stackView = UIStackView(arrangedSubviews: [
+            welcomeLabel, logoutButton, authorLabel, titleLabel
+        ])
         stackView.spacing = margin
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
@@ -63,3 +77,9 @@ class WelcomeView: UIView {
     }
 }
 
+extension WelcomeView: WelcomeViewDelegate {
+    func showGiphy(_ model: GiphyModel) {
+        titleLabel.text = model.title
+        authorLabel.text = model.author
+    }
+}

@@ -28,13 +28,18 @@ class WelcomeViewController: UIViewController {
     }
     
     override func loadView() {
+        let view = WelcomeView(presenter: presenter, name: name)
+
+        presenter.viewDelegate = view
         presenter.viewControllerDelegate = self
 
-        view = WelcomeView(presenter: presenter, name: name)
+        self.view = view
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        presenter.getRandomMedia()
     }
 }
 
