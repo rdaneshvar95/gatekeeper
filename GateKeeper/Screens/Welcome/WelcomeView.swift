@@ -9,11 +9,15 @@ import UIKit
 
 class WelcomeView: UIView {
     
+    private enum Copy: String {
+        case logout = "Logout"
+        case welcome = "Welcome %@"
+    }
+
     private let presenter: WelcomePresenter
 
     private let welcomeLabel: UILabel = {
         let label = UILabel()
-        label.text = "Welcome"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         return label
@@ -21,19 +25,20 @@ class WelcomeView: UIView {
     
     private let logoutButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Logout", for: .normal)
+        button.setTitle(Copy.logout.rawValue, for: .normal)
         return button
     }()
 
     private let margin: CGFloat = 8
     
-    init(presenter: WelcomePresenter) {
+    init(presenter: WelcomePresenter, name: String) {
         self.presenter = presenter
         
         super.init(frame: .zero)
 
         backgroundColor = .white
         
+        welcomeLabel.text = .localizedStringWithFormat(Copy.welcome.rawValue, name)
         logoutButton.addTarget(self, action: #selector(tapOnLogout), for: .touchUpInside)
 
         let stackView = UIStackView(arrangedSubviews: [welcomeLabel, logoutButton])
