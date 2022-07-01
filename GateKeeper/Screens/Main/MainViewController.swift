@@ -9,6 +9,7 @@ import UIKit
 
 protocol MainViewControllerDelegate: AnyObject {
     func showWelcomeScreen()
+    func showErrorAlert(message: String)
 }
 
 class MainViewController: UIViewController {
@@ -27,6 +28,14 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: MainViewControllerDelegate {
+    func showErrorAlert(message: String) {
+        let alertViewController = UIAlertController(title: "Oops!", message: message, preferredStyle: .alert)
+        alertViewController.addAction(.init(title: "OK", style: .default, handler: { _ in
+            alertViewController.dismiss(animated: true)
+        }))
+        present(alertViewController, animated: true)
+    }
+    
     func showWelcomeScreen() {
         let welcomeViewController = WelcomeViewController()
         navigationController?.setViewControllers([welcomeViewController], animated: true)

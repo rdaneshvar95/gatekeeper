@@ -11,7 +11,7 @@ class WelcomePresenter {
     
     weak var viewControllerDelegate: WelcomeViewControllerDelegate?
     
-    func login() {
+    func logout() {
         viewControllerDelegate?.showMainScreen()
     }
 }
