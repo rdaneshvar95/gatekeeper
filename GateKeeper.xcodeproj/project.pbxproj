@@ -24,6 +24,7 @@
 		71F6DDCB286E791A00DF8EAD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6DDCA286E791A00DF8EAD /* NetworkManager.swift */; };
 		71F6DDCE286E7B1900DF8EAD /* GiphyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6DDCD286E7B1900DF8EAD /* GiphyService.swift */; };
 		71F6DDD1286E7B9900DF8EAD /* GiphyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F6DDD0286E7B9900DF8EAD /* GiphyModel.swift */; };
+		71F6DDD5286EBF5F00DF8EAD /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 71F6DDD4286EBF5F00DF8EAD /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71F6DDD5286EBF5F00DF8EAD /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +217,9 @@
 			dependencies = (
 			);
 			name = GateKeeper;
+			packageProductDependencies = (
+				71F6DDD4286EBF5F00DF8EAD /* SDWebImage */,
+			);
 			productName = GateKeeper;
 			productReference = 717E322C286E56C80076953C /* GateKeeper.app */;
 			productType = "com.apple.product-type.application";
@@ -287,6 +292,9 @@
 				Base,
 			);
 			mainGroup = 717E3223286E56C80076953C;
+			packageReferences = (
+				71F6DDD3286EBF5F00DF8EAD /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 717E322D286E56C80076953C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -678,6 +686,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		71F6DDD3286EBF5F00DF8EAD /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71F6DDD4286EBF5F00DF8EAD /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 71F6DDD3286EBF5F00DF8EAD /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 717E3224286E56C80076953C /* Project object */;
 }
